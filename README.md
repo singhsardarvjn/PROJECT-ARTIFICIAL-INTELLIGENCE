@@ -143,3 +143,59 @@ footer strong{color:var(--sand);}
     <li><a href="#ai-chat" class="nav-cta">Try Now</a></li>
   </ul>
 </nav>
+<section class="hero">
+  <div class="hero-text">
+    <div class="hero-badge">Powered by FurnAI API v2.4</div>
+    <h1>Find Furniture That <em>Perfectly Fits</em> Your Space</h1>
+    <p class="hero-sub">FurnAI uses AI to analyze your room's style, dimensions, and color palette — then recommends furniture that harmonizes beautifully, every single time.</p>
+    <div class="hero-btns">
+      <a href="#ai-chat" class="btn-primary">Chat with AI →</a>
+      <a href="#how" class="btn-secondary">How It Works</a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="room-card">
+      <div class="room-illustration">
+        <div class="ai-tag">AI Matching Live</div>
+        <svg viewBox="0 0 400 240" class="room-svg" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="160" width="400" height="80" fill="#a08060" opacity="0.6"/>
+          <rect x="0" y="0" width="400" height="160" fill="#c4b09a" opacity="0.5"/>
+          <ellipse cx="200" cy="185" rx="130" ry="22" fill="#8b6344" opacity="0.4"/>
+          <rect x="60" y="120" width="180" height="55" rx="8" fill="#5c3d2a"/>
+          <rect x="60" y="108" width="180" height="22" rx="6" fill="#7a5240"/>
+          <rect x="50" y="118" width="20" height="45" rx="6" fill="#6b4832"/>
+          <rect x="230" y="118" width="20" height="45" rx="6" fill="#6b4832"/>
+          <rect x="72" y="112" width="50" height="18" rx="5" fill="#c9aa87" opacity="0.8"/>
+          <rect x="128" y="112" width="50" height="18" rx="5" fill="#c9aa87" opacity="0.8"/>
+          <rect x="184" y="112" width="44" height="18" rx="5" fill="#c9aa87" opacity="0.8"/>
+          <rect x="110" y="162" width="90" height="8" rx="3" fill="#3d2b1f"/>
+          <rect x="296" y="90" width="6" height="80" fill="#6b4832"/>
+          <polygon points="278,90 322,90 310,50 290,50" fill="#e8d9c5" opacity="0.9"/>
+          <rect x="34" y="140" width="8" height="30" fill="#5c4a3a"/>
+          <circle cx="38" cy="125" r="20" fill="#7a9e7e" opacity="0.85"/>
+          <circle cx="28" cy="132" r="13" fill="#6b9070" opacity="0.8"/>
+          <rect x="300" y="20" width="70" height="90" rx="4" fill="#d4eaf7" opacity="0.6"/>
+          <line x1="335" y1="20" x2="335" y2="110" stroke="#b8a48c" stroke-width="2"/>
+          <circle cx="100" cy="135" r="5" fill="#c0714a" opacity="0.9"/>
+          <circle cx="200" cy="130" r="5" fill="#c0714a" opacity="0.9"/>
+          <circle cx="290" cy="140" r="5" fill="#c0714a" opacity="0.9"/>
+          <line x1="100" y1="135" x2="200" y2="130" stroke="#c0714a" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.6"/>
+          <line x1="200" y1="130" x2="290" y2="140" stroke="#c0714a" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.6"/>
+        </svg>
+      </div>
+      <div class="match-result">
+        <div class="match-label">Top Match Detected</div>
+        <div class="furniture-chips">
+          <span class="chip active">Scandinavian Sofa</span>
+          <span class="chip">Oak Coffee Table</span>
+          <span class="chip">Rattan Armchair</span>
+        </div>
+        <div class="match-score">
+          <span style="font-size:0.78rem;color:var(--oak);font-weight:500;">Harmony Score</span>
+          <div class="score-bar"><div class="score-fill"></div></div>
+          <span class="score-text">87%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
