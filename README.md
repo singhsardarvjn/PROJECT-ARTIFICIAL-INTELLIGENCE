@@ -422,3 +422,17 @@ async function sendMessage() {
   setLoading(false);
   addMessage('ai', apiResponse.response);
 }
+function sq(text) {
+  document.getElementById('chatInput').value = text;
+  sendMessage();
+}
+
+function esc(t) { return t.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function handleKey(e) { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMessage(); } }
+function autoResize(el) { el.style.height = 'auto'; el.style.height = Math.min(el.scrollHeight, 110) + 'px'; }
+
+const obs = new IntersectionObserver(e => e.forEach(x => { if(x.isIntersecting) x.target.style.animation='fadeUp 0.6s ease both'; }), {threshold:0.1});
+document.querySelectorAll('.step-card,.feat-card,.testi-card').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
