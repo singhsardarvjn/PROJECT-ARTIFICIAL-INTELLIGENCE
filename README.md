@@ -402,3 +402,23 @@ function addMessage(role, text) {
   </div>`;
   div.scrollTop = div.scrollHeight;
 }
+function setLoading(s) {
+  isLoading = s;
+  document.getElementById('typingIndicator').classList.toggle('show', s);
+  document.getElementById('sendBtn').disabled = s;
+  if (s) document.getElementById('messagesDiv').scrollTop = 99999;
+}
+
+async function sendMessage() {
+  const inp = document.getElementById('chatInput');
+  const text = inp.value.trim();
+  if (!text || isLoading) return;
+  inp.value = '';
+  autoResize(inp);
+  addMessage('user', text);
+  setLoading(true);
+  // Call FurnAI API
+  const apiResponse = await callFurnAIAPI(text);
+  setLoading(false);
+  addMessage('ai', apiResponse.response);
+}
